@@ -2,33 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ⭐️ 1. 프로젝트 데이터를 관리하는 객체
   const projectData = {
-    'home-sweet-home-1': {
-    number: 1,
-      title: '즐거운 나의 집 home sweet home',
-      type: 'BOOK, POSTER',
-      year: '2023',
-      // 이미지가 여러 개일 경우 배열로 추가
-      images: ['/img/hsh2.png','/img/hsh1.png', '/img/hsh3.png','/img/hsh4.png','/img/hsh5.png', '/img/hsh6.png','/img/hsh7.png'], 
-      text: `
-        <p>
-          <span class="kor">즐거운 나의 집</span> home sweet home<br/>
-          2023<br/><br/>
 
-          POSTER<br/>
-          A3<br/><br/>
-
-          BOOK<br/>
-          A6<br/>
-          104p<br/></br>
-
-          <span class="kor">‘개발’이라는 개념에 의문을 가지고 주변에서 일어났던 두 가지 재개발 사건에 대해 다뤘다. 스트리트뷰 스크린샷을 사용해서 개발이 진행되는 모습을 시간 순으로 나열하고, 직접 방문해서 현재의 모습을 촬영한 사진들을 담았다. </br></br>
-
-          <a href="https://www.instagram.com/p/C1Y47u9OzR3/" target="_blank"> ▶︎ <span class="kor hype">2023 실천단 겨울전시 『invisible (to) visible』</span></a>
-        </p>
-      `,
-    },
-    'another-project-2': {
-        number: 2,
+    'dong': {
+        number: 1,
       title: '동시대 유령들 contemporary ghosts',
       type: 'BOOK',
       year: '2025',
@@ -62,53 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
       `,
     },
 
-    'new': {
-        number: 3,
-      title: '새헌법',
-      type: 'BOOK',
-      year: '2024',
-      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
-      images: ['/img/new2.png','/img/new4.png','/img/new3.png','/img/new1.png','/img/new5.jpg','/img/new6.jpg','/img/new7.jpg'],
-      text: `
-        <p>
-          <span class="kor">새 헌법</span> <br/>
-          2024<br/><br/>
-
-          BOOK<br/>
-          A5<br/>
-          64p<br/><br/>
-
-          <span class="kor">헌법의 틀린 맞춤법을 수정한 일종의 헌법 제11호. </br>
-          헌법 제10호는 1987년에 개정되었다. 하지만 아직 맞춤법이 완전하지 않은 부분들이 더러 있다. 올바르지 않은 부분은 회색으로 표기하고 바로 위에 수정된 말은 검정으로 표기했다. 맞춤법이 갖춰진 새 헌법만을 읽고 싶다면 검정 부분만 눈으로 따라가면 되도록 한 것이다. 사용된 모든 맞춤법 수정은 ‘부산대 맞춤법/문법 검사기(https:// nara-speller.co.kr/speller/results)’에 따른 것이다. </br>
-맞춤법을 수정한 개정 버전이라는 의미에서 표지에 도장처럼 제목을 겹쳐서 배치했다. 맞춤법이 어긋난 부분에는 점선으로 밑줄을 긋고 텍스트를 회색 처리하고, 위에 수정된 검정색 텍스트를 올렸다.
-1부터 130까지 중복없이 숫자가 이어지는 조의 경우 왼쪽에 영역을 따로 두어서 찾고자 하는 조를 바로바로 찾을 수 있게 했고, 장은 서체의 변주로, 절과 관은 글자의 크기 및 위치로 위계를 주었다.
-상철, 단면으로 제작하여 원하는 항목 찾기가 용이하도록 했다.
-        </p>
-      `,
-    },
-     'cap': {
-        number: 4,
-      title: '자본주의 리얼리즘',
-      type: 'BOOK COVER',
-      year: '2024',
-      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
-      images: ['/img/cap1.png','/img/cap2.png'],
-      text: `
-        <p>
-          <span class="kor">자본주의 리얼리즘 <br/>
-          *개인작업</span></br>
-          2024<br/><br/>
-
-          BOOK COVER<br/><br/>
-
-          <span class="kor">『자본주의 리얼리즘: 대안은 없는가』 - 마크 피셔<br/>
-사회를 구조화하는 자신의 실체를 달콤하고 반짝이는 환상으로 가리고 있는 자본주의의 모습을 담았다. ‘자본주의 리얼리즘에 대항하는 한 가지 전략은 자본주의가 우리에게 제시하는 현실의 기저에 있는 실재(들)을 환기시키는 것이다.’ 이 책이 환상에 균열을 내서 구조화된 실재를 볼 수 있게 하는 역할을 한다는 의미에서, 시럽같은 껍데기에 구멍을 내서 책의 정보를 넣었다.<br/><br/>
-        </p>
-      `,
-    },
-
     'jun': {
-        number: 5,
+        number: 2,
       title: '한국 전통놀이 한마당',
       type: 'POSTER, BILLBOARD, FLAG',
       year: '2025',
@@ -129,34 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
       `,
     },
 
-    'ggol': {
-        number: 6,
-      title: '꼴라주 레터링',
-      type: 'LETTERING',
-      year: '2025',
-      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
-      images: ['/img/ggol1.png'],
-      text: `
-        <p>
-          <span class="kor">꼴라주 레터링</span> <br/>
-          2025<br/><br/>
-
-          LETTERING<br/><br/>
-
-          <span class="kor">사각형 안에 꽉 들어차게 콜라주된 글자들을 상상했다.<br/><br/>
-
-          <a href="https://www.instagram.com/p/DHH_RV8vpiE/?img_index=1" target="_blank"> ▶︎ <span class="kor hype">홍익대학교 시각디자인과 2025 SISO 한글꼴연구회 『네모 네모 네모 네모 네모 네모』 워크샵</span></a> <br/><br/>
-
-          《네모 네모 네모 네모 네모 네모: ■■■연구회》<br/>
-
-■■■연구회 안에는 무엇이든 들어갈 수 있다. 회원들이 자유롭게 상상한 ■■■연구회의 글자를 보자. ■■■연구회는 꼴과 어감이 비슷한 음절의 단어로 한글꼴연구회의 유쾌한 가능성을 보여준다.
-
-        </p>
-      `,
-    },
-
     'pot': {
-        number: 7,
+        number: 3,
       title: '『Potluck』 리플렛',
       type: 'LEAFLET',
       year: '2025',
@@ -176,99 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
       `,
     },
 
-    'str': {
-        number: 8,
-      title: '09 -14: 거리(뷰), 한국, 패션',
-      type: 'BOOK',
-      year: '2024',
-      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
-      images: ['/img/str1.png','/img/str2.png','/img/str3.png','/img/str4.png','/img/str5.png'],
-      text: `
-        <p>
-          <span class="kor">09 -14: 거리(뷰), 한국, 패션</span> <br/>
-          2024<br/><br/>
-
-          BOOK<br/>
-          A6<br/>
-          40p<br/><br/>
-
-          <span class="kor">'패션암흑기'라고 불리는 00-10년대 중 2009년부터 2014년까지의 한국 유행 패션을 스트리트뷰에서 찾아 아카이빙했다. 실제 사람들의 패션을 직접 가상으로 돌아다니며 관찰할 수 있는 적절한 리서치 방법이라고 생각해 스트리트뷰를 선택했다. 스트리트뷰의 '돌아다닌다'라는 특성을 반영해 거리를 다닐 때 들고 돌아다닐 수 있게끔 가방처럼 제본하고, 판형도 A6의 작은 사이즈로 제작했다.
-          <br/><br/>
-          패션 항목들에 기호를 붙이고, 함께 스타일링되거나 비슷한 아이템들을 하단에 표시했다.
-          <br/><br/>
-
-        </p>
-      `,
-    },
-
-    'cat': {
-        number: 9,
-      title: '고양이를 부탁해 레터링',
-      type: 'LETTERING',
-      year: '2024',
-      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
-      images: ['/img/cat1.png'],
-      text: `
-        <p>
-          <span class="kor">고양이를 부탁해 레터링 <br/>
-          *개인작업</span><br/>
-          2024<br/><br/>
-
-          LETTERING<br/><br/>
-
-          <span class="kor">영화 〈고양이를 부탁해〉의 가상 타이틀 레터링.<br/><br/>
-
-          
-        </p>
-      `,
-    },
-
-    'tai': {
-        number: 10,
-      title: 'Taiji 레터링',
-      type: 'LETTERING',
-      year: '2024',
-      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
-      images: ['/img/tai.png','/img/tai2.png'],
-      text: `
-        <p>
-          <span class="kor">Taiji 레터링 <br/>
-          *개인작업</span><br/>
-          2024<br/><br/>
-
-          LETTERING<br/><br/>
-
-          <span class="kor"><br/><br/>
-        </p>
-      `,
-    },
-
-    'ki': {
-        number: 11,
-      title: 'Kiddo 레터링',
-      type: 'LETTERING',
-      year: '2024',
-      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
-      images: ['/img/ki2.png'],
-      text: `
-        <p>
-          <span class="kor">Kiddo 레터링 <br/>
-          *개인작업</span><br/>
-          2024<br/><br/>
-
-          LETTERING<br/><br/>
-
-          <span class="kor">김뜻돌 - Kiddo(기도) 가상 타이틀 레터링. 빛이 번지는 것처럼 가로획들을 길게 퍼뜨려서, 반짝이는 곡의 분위기와 시원한 기타톤을 표현했다. 의도하진 않았지만 레터링을 뒤집으면 빛을 안고 엎드려 기도하는 사람처럼 보이기도 한다. <br/><br/>
-
-<a href="https://www.instagram.com/p/DD6ByykTqES/?img_index=3" target="_blank">  ▶︎ <span class="kor hype">한글꼴연구회 『레터링』 1호 참여</span></a>
-          
-          
-        </p>
-      `,
-    },
-
     'bok': {
-        number: 12,
+        number: 4,
       title: '『복도는 복도다』 그래픽',
       type: 'POSTER, GRAPHIC',
       year: '2024',
@@ -307,6 +121,211 @@ document.addEventListener('DOMContentLoaded', () => {
         </p>
       `,
     },
+
+    'ki': {
+        number: 5,
+      title: 'Kiddo 레터링',
+      type: 'LETTERING',
+      year: '2024',
+      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
+      images: ['/img/ki2.png'],
+      text: `
+        <p>
+          <span class="kor">Kiddo 레터링 <br/>
+          *개인작업</span><br/>
+          2024<br/><br/>
+
+          LETTERING<br/><br/>
+
+          <span class="kor">김뜻돌 - Kiddo(기도) 가상 타이틀 레터링. 빛이 번지는 것처럼 가로획들을 길게 퍼뜨려서, 반짝이는 곡의 분위기와 시원한 기타톤을 표현했다. 의도하진 않았지만 레터링을 뒤집으면 빛을 안고 엎드려 기도하는 사람처럼 보이기도 한다. <br/><br/>
+
+<a href="https://www.instagram.com/p/DD6ByykTqES/?img_index=3" target="_blank">  ▶︎ <span class="kor hype">한글꼴연구회 『레터링』 1호 참여</span></a>
+          
+          
+        </p>
+      `,
+    },
+
+    'str': {
+        number: 6,
+      title: '09 -14: 거리(뷰), 한국, 패션',
+      type: 'BOOK',
+      year: '2024',
+      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
+      images: ['/img/str1.png','/img/str2.png','/img/str3.png','/img/str4.png','/img/str5.png'],
+      text: `
+        <p>
+          <span class="kor">09 -14: 거리(뷰), 한국, 패션</span> <br/>
+          2024<br/><br/>
+
+          BOOK<br/>
+          A6<br/>
+          40p<br/><br/>
+
+          <span class="kor">'패션암흑기'라고 불리는 00-10년대 중 2009년부터 2014년까지의 한국 유행 패션을 스트리트뷰에서 찾아 아카이빙했다. 실제 사람들의 패션을 직접 가상으로 돌아다니며 관찰할 수 있는 적절한 리서치 방법이라고 생각해 스트리트뷰를 선택했다. 스트리트뷰의 '돌아다닌다'라는 특성을 반영해 거리를 다닐 때 들고 돌아다닐 수 있게끔 가방처럼 제본하고, 판형도 A6의 작은 사이즈로 제작했다.
+          <br/><br/>
+          패션 항목들에 기호를 붙이고, 함께 스타일링되거나 비슷한 아이템들을 하단에 표시했다.
+          <br/><br/>
+
+        </p>
+      `,
+    },
+
+    'home-sweet-home-1': {
+    number: 7,
+      title: '즐거운 나의 집 home sweet home',
+      type: 'BOOK, POSTER',
+      year: '2023',
+      // 이미지가 여러 개일 경우 배열로 추가
+      images: ['/img/hsh2.png','/img/hsh1.png', '/img/hsh3.png','/img/hsh4.png','/img/hsh5.png', '/img/hsh6.png','/img/hsh7.png'], 
+      text: `
+        <p>
+          <span class="kor">즐거운 나의 집</span> home sweet home<br/>
+          2023<br/><br/>
+
+          POSTER<br/>
+          A3<br/><br/>
+
+          BOOK<br/>
+          A6<br/>
+          104p<br/></br>
+
+          <span class="kor">‘개발’이라는 개념에 의문을 가지고 주변에서 일어났던 두 가지 재개발 사건에 대해 다뤘다. 스트리트뷰 스크린샷을 사용해서 개발이 진행되는 모습을 시간 순으로 나열하고, 직접 방문해서 현재의 모습을 촬영한 사진들을 담았다. </br></br>
+
+          <a href="https://www.instagram.com/p/C1Y47u9OzR3/" target="_blank"> ▶︎ <span class="kor hype">2023 실천단 겨울전시 『invisible (to) visible』</span></a>
+        </p>
+      `,
+    },
+
+    'tai': {
+        number: 8,
+      title: 'Taiji 레터링',
+      type: 'LETTERING',
+      year: '2024',
+      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
+      images: ['/img/tai.png','/img/tai2.png'],
+      text: `
+        <p>
+          <span class="kor">Taiji 레터링 <br/>
+          *개인작업</span><br/>
+          2024<br/><br/>
+
+          LETTERING<br/><br/>
+
+          <span class="kor"><br/><br/>
+        </p>
+      `,
+    },
+    
+
+    'new': {
+        number: 9,
+      title: '새헌법',
+      type: 'BOOK',
+      year: '2024',
+      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
+      images: ['/img/new2.png','/img/new4.png','/img/new3.png','/img/new1.png','/img/new5.jpg','/img/new6.jpg','/img/new7.jpg'],
+      text: `
+        <p>
+          <span class="kor">새 헌법</span> <br/>
+          2024<br/><br/>
+
+          BOOK<br/>
+          A5<br/>
+          64p<br/><br/>
+
+          <span class="kor">헌법의 틀린 맞춤법을 수정한 일종의 헌법 제11호. </br>
+          헌법 제10호는 1987년에 개정되었다. 하지만 아직 맞춤법이 완전하지 않은 부분들이 더러 있다. 올바르지 않은 부분은 회색으로 표기하고 바로 위에 수정된 말은 검정으로 표기했다. 맞춤법이 갖춰진 새 헌법만을 읽고 싶다면 검정 부분만 눈으로 따라가면 되도록 한 것이다. 사용된 모든 맞춤법 수정은 ‘부산대 맞춤법/문법 검사기(https:// nara-speller.co.kr/speller/results)’에 따른 것이다. </br>
+맞춤법을 수정한 개정 버전이라는 의미에서 표지에 도장처럼 제목을 겹쳐서 배치했다. 맞춤법이 어긋난 부분에는 점선으로 밑줄을 긋고 텍스트를 회색 처리하고, 위에 수정된 검정색 텍스트를 올렸다.
+1부터 130까지 중복없이 숫자가 이어지는 조의 경우 왼쪽에 영역을 따로 두어서 찾고자 하는 조를 바로바로 찾을 수 있게 했고, 장은 서체의 변주로, 절과 관은 글자의 크기 및 위치로 위계를 주었다.
+상철, 단면으로 제작하여 원하는 항목 찾기가 용이하도록 했다.
+        </p>
+      `,
+    },
+
+    'cat': {
+        number: 10,
+      title: '고양이를 부탁해 레터링',
+      type: 'LETTERING',
+      year: '2024',
+      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
+      images: ['/img/cat1.png'],
+      text: `
+        <p>
+          <span class="kor">고양이를 부탁해 레터링 <br/>
+          *개인작업</span><br/>
+          2024<br/><br/>
+
+          LETTERING<br/><br/>
+
+          <span class="kor">영화 〈고양이를 부탁해〉의 가상 타이틀 레터링.<br/><br/>
+
+          
+        </p>
+      `,
+    },
+
+
+     'cap': {
+        number: 11,
+      title: '자본주의 리얼리즘',
+      type: 'BOOK COVER',
+      year: '2024',
+      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
+      images: ['/img/cap1.png','/img/cap2.png'],
+      text: `
+        <p>
+          <span class="kor">자본주의 리얼리즘 <br/>
+          *개인작업</span></br>
+          2024<br/><br/>
+
+          BOOK COVER<br/><br/>
+
+          <span class="kor">『자본주의 리얼리즘: 대안은 없는가』 - 마크 피셔<br/>
+사회를 구조화하는 자신의 실체를 달콤하고 반짝이는 환상으로 가리고 있는 자본주의의 모습을 담았다. ‘자본주의 리얼리즘에 대항하는 한 가지 전략은 자본주의가 우리에게 제시하는 현실의 기저에 있는 실재(들)을 환기시키는 것이다.’ 이 책이 환상에 균열을 내서 구조화된 실재를 볼 수 있게 하는 역할을 한다는 의미에서, 시럽같은 껍데기에 구멍을 내서 책의 정보를 넣었다.<br/><br/>
+        </p>
+      `,
+    },
+
+    
+
+    'ggol': {
+        number: 12,
+      title: '꼴라주 레터링',
+      type: 'LETTERING',
+      year: '2025',
+      // 이미지가 하나일 경우에도 배열로 넣는 것이 일관성을 유지하기에 좋습니다.
+      images: ['/img/ggol1.png'],
+      text: `
+        <p>
+          <span class="kor">꼴라주 레터링</span> <br/>
+          2025<br/><br/>
+
+          LETTERING<br/><br/>
+
+          <span class="kor">사각형 안에 꽉 들어차게 콜라주된 글자들을 상상했다.<br/><br/>
+
+          <a href="https://www.instagram.com/p/DHH_RV8vpiE/?img_index=1" target="_blank"> ▶︎ <span class="kor hype">홍익대학교 시각디자인과 2025 SISO 한글꼴연구회 『네모 네모 네모 네모 네모 네모』 워크샵</span></a> <br/><br/>
+
+          《네모 네모 네모 네모 네모 네모: ■■■연구회》<br/>
+
+■■■연구회 안에는 무엇이든 들어갈 수 있다. 회원들이 자유롭게 상상한 ■■■연구회의 글자를 보자. ■■■연구회는 꼴과 어감이 비슷한 음절의 단어로 한글꼴연구회의 유쾌한 가능성을 보여준다.
+
+        </p>
+      `,
+    },
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
     // 여기에 필요한 만큼 프로젝트를 추가하세요.
     // '프로젝트-이름': {
     //   title: '...',
