@@ -96,8 +96,8 @@ body {
     height: 162px;
     width: 279px;
     flex-shrink: 0;
-    border-bottom: 1px solid;
-    border-right: 1px solid;
+    border-bottom: 1.3px solid;
+    border-right: 1.3px solid;
     padding: 5px 0px 0px 6px;
     border-color: var(--border-color);
     }
@@ -180,7 +180,7 @@ body {
         position: fixed; /* 페이지 스크롤과 무관하게 고정 */
     background-color: var(--background-color);
     width: calc(min(100vw, 1500px) - 2px); /* .wrap2 너비 - border 너비 */
-    border-width:0px 0px 1px 0px;
+    border-width:0px 0px 1.3px 0px;
     border-style: solid;
     padding: 10px;
     height: 20px;
