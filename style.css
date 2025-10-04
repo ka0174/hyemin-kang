@@ -21,6 +21,10 @@
     font-family: 'kor';
     font-size: 9.5pt;
 }
+
+.eng{
+    font-family: 'eng';
+}
 :root {
   --text-color: black;
   --background-color: white;
