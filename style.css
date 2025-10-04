@@ -24,6 +24,7 @@
 
 .eng{
     font-family: 'eng';
+    font-size: 12pt;
 }
 :root {
   --text-color: black;
