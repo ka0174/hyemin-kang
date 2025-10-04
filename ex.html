@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        *{
+            box-sizing: border-box;
+            margin : 5px;
+            padding : 5px;
+        }
+        .wrap{
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+        .wrap2{
+            margin-left: 100px;
+        }
+        .one {
+            width: 10%;
+            height : 500px;
+            display: flex;
+            flex-direction: column;
+            border : 3px solid red;
+            position: fixed;
+        }
+        .two {
+            width: 20%;
+            height : 1000px;
+            display: flex;
+            flex-direction: column;
+            border : 3px solid red;
+        }
+        .third {
+            width: 70%;
+            height : 1000px;
+            display: flex;
+            flex-direction: column;
+            border : 3px solid red;
+        }
+        .icon1{
+            height: 80px;
+            border: 1px solid red;
+        }
+        .icon2{
+            height: 80px;
+            border: 1px solid red;
+        }
+        .icon3{
+            height: 80px;
+            border: 1px solid red;
+        }
+        .section1{
+            border: 1px solid blue;
+            flex: 2 0 auto;
+        }
+        .section2{
+            border: 1px solid blue;
+            flex: 2 0 auto;
+        }
+        .section3{
+            border: 1px solid blue;
+            flex: 1 0 auto;
+        }
+        .section4{
+            border: 1px solid blue;
+            flex: 4 0 auto;
+        }
+        .section5{
+            border: 1px solid blue;
+            flex: 1 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <div class="one">
+        <div class="icon1">아이콘1</div>
+        <div class="icon2">아이콘2</div>
+        <div class="icon3">아이콘3</div>
+    </div>
+    <div class="wrap2 two">
+        <div class="section1">영역1</div>
+        <div class="section2">영역2</div>
+        <div class="section3">영역3</div>
+    </div>
+    <div class="third">
+        <div class="section4">영역4</div>
+        <div class="section5">영역5</div>
+    </div>
+    </div>
+</body>
+</html>
